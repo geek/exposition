@@ -1,0 +1,20 @@
+{
+  "name": "exposition",
+  "version": "0.0.0",
+  "description": "Prometheus text-based exposition parse and stringify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geek/exposition.git"
+  },
+  "keywords": [],
+  "author": "wyatt",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/geek/exposition/issues"
+  },
+  "homepage": "https://github.com/geek/exposition#readme"
+}

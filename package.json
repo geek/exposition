@@ -2,9 +2,10 @@
   "name": "exposition",
   "version": "0.0.0",
   "description": "Prometheus text-based exposition parse and stringify",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "belly-button",
+    "test": "lab"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/geek/exposition/issues"
   },
-  "homepage": "https://github.com/geek/exposition#readme"
+  "homepage": "https://github.com/geek/exposition#readme",
+  "devDependencies": {
+    "belly-button": "3.x.x",
+    "code": "4.x.x",
+    "lab": "13.x.x"
+  }
 }

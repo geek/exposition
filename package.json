@@ -1,6 +1,6 @@
 {
   "name": "exposition",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Prometheus text-based exposition parse and stringify",
   "main": "lib",
   "scripts": {

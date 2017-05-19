@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/geek/exposition.git"
   },
-  "keywords": [],
+  "keywords": ["prometheus", "parse", "exposition", "prom"],
   "author": "wyatt",
   "license": "MPL-2.0",
   "bugs": {

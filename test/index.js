@@ -6,9 +6,6 @@ const Exposition = require('../');
 const Inputs = require('./text_inputs');
 
 
-const internals = {};
-
-
 // Test shortcuts
 
 const lab = exports.lab = Lab.script();
@@ -38,22 +35,22 @@ describe('parse()', () => {
     expect(parsed[0]).to.equal({
       name: 'http_requests_total',
       metrics: [
-       {
+        {
           labels: {
             method: 'post',
             code: '200'
           },
           value: '1027',
           timestamp: '1395066363000'
-       },
-       {
+        },
+        {
           labels: {
             method: 'post',
             code: '400'
           },
           value: '3',
           timestamp: '1395066363000'
-       }
+        }
       ],
       help: 'The total number of HTTP requests.',
       type: 'COUNTER'
@@ -68,22 +65,22 @@ describe('stringify()', () => {
     const input = [{
       name: 'http_requests_total',
       metrics: [
-       {
+        {
           labels: {
             method: 'post',
             code: '200'
           },
           value: '1027',
           timestamp: '1395066363000'
-       },
-       {
+        },
+        {
           labels: {
             method: 'post',
             code: '400'
           },
           value: '3',
           timestamp: '1395066363000'
-       }
+        }
       ],
       help: 'The total number of HTTP requests.',
       type: 'COUNTER'

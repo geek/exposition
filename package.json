@@ -1,6 +1,6 @@
 {
   "name": "exposition",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Prometheus text-based exposition parse and stringify",
   "main": "lib",
   "scripts": {
@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/geek/exposition.git"
   },
-  "keywords": ["prometheus", "parse", "exposition", "prom"],
+  "keywords": [
+    "prometheus",
+    "parse",
+    "exposition",
+    "prom"
+  ],
   "author": "wyatt",
   "license": "MPL-2.0",
   "bugs": {

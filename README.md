@@ -76,3 +76,34 @@ is represented as
     "type": "HISTOGRAM"
 }]
 ```
+
+
+### `stringify(array)`
+
+Returns an exposition text-formatted representation of the array of objects.
+
+Example:
+
+```js
+const Exposition = require('exposition');
+
+const input = [{
+  name: 'net_agg_packets_in',
+  help: 'Aggregate inbound packets',
+  type: 'COUNTER',
+  metrics: [
+    {
+      value: '153'
+    }
+  ]
+}];
+
+console.log(Exposition.stringify(input));
+```
+
+result:
+```
+# HELP net_agg_packets_in Aggregate inbound packets
+# TYPE net_agg_packets_in counter
+net_agg_packets_in 153
+```

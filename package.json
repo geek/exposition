@@ -1,10 +1,14 @@
 {
   "name": "exposition",
-  "version": "1.1.1",
+  "version": "1.1.0",
   "description": "Prometheus text-based exposition parse and stringify",
   "main": "lib",
+  "bin": {
+    "exposition": "./bin/exposition"
+  },
   "scripts": {
     "lint": "belly-button",
+    "pretest": "npm run lint",
     "test": "lab"
   },
   "repository": {

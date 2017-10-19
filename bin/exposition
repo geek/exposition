@@ -1,0 +1,17 @@
+#!/usr/bin/env node --abort-on-uncaught-exception
+
+'use strict';
+
+var Exposition = require('../lib');
+var process = require('process');
+
+var strProm = '';
+
+process.stdin.on('data', function (data) {
+    strProm = strProm + data;
+});
+
+process.stdin.on('end', function () {
+    var parsed = Exposition.parse(strProm);
+    console.log(JSON.stringify(parsed));
+});
